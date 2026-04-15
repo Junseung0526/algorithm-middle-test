@@ -1,42 +1,36 @@
-# 알고리즘 중간고사 완벽 대비 (Algorithm Midterm Test)
+# Algorithm Study Repository
 
-이 레포지토리는 알고리즘 중간고사를 대비하여 주요 알고리즘의 핵심 개념, 파이썬 구현, 그리고 시험 꿀팁을 정리한 공간입니다.
+## 1. 개요
+이 레포지토리는 알고리즘 중간고사 대비를 위해 핵심 개념 이론과 파이썬 구현 코드를 체계적으로 정리한 공간입니다. 각 알고리즘의 동작 원리뿐만 아니라 시험에서 중요하게 다뤄지는 성능 분석(시간/공간 복잡도)과 최적화 전략을 포함하고 있습니다.
 
----
+## 2. 프로젝트 구조 (Directory Structure)
 
-## 📚 수록된 알고리즘 및 시험 꿀팁
+### 2.1. Concepts (개념 정리)
+핵심 이론과 시험 포인트를 정리한 Markdown 문서들입니다.
 
-각 파일에는 **[시험 꿀팁! - 핵심 추가]** 섹션과 **알고리즘 진행 단계**가 상세히 기록되어 있습니다.
+- [01_Sort_정렬.md](./Concepts_개념정리/01_Sort_정렬.md)
+- [02_Search_탐색.md](./Concepts_개념정리/02_Search_탐색.md)
+- [03_Greedy_탐욕알고리즘.md](./Concepts_개념정리/03_Greedy_탐욕알고리즘.md)
+- [04_Backtracking_백트래킹.md](./Concepts_개념정리/04_Backtracking_백트래킹.md)
+- [05_BranchAndBound_분기한정.md](./Concepts_개념정리/05_BranchAndBound_분기한정.md)
+- [06_Approximation_근사알고리즘.md](./Concepts_개념정리/06_Approximation_근사알고리즘.md)
+- [07_Advanced_고급알고리즘.md](./Concepts_개념정리/07_Advanced_고급알고리즘.md)
 
-| 파일명 | 알고리즘 | 핵심 시험 포인트 |
-| :--- | :--- | :--- |
-| [MergeSort.py](./MergeSort.py) | 분할 정복 | 공간 복잡도 $O(n)$, 부적절한 사례(피보나치) |
-| [Greedy.py](./Greedy.py) | 탐욕 알고리즘 | 탐욕적 선택 속성, 최적 부분 구조, 허프만/다익스트라 |
-| [Backtracking.py](./Backtracking.py) | 백트랙킹 | 유망성(Promising)과 가지치기(Pruning), N-Queens |
-| [BranchAndBound.py](./BranchAndBound.py) | 분기 한정 | 탐색 방식(BFS/Best-First), Bounding |
-| [Approximation.py](./Approximation.py) | 근사 알고리즘 | NP-Hard, P vs NP, 다항 시간 내 충분히 좋은 해 |
-| [Sort.py](./Sort.py) | 정렬(Quick) | 피벗 선정 전략, 최악의 경우($O(n^2)$) 방지 |
-| [Search.py](./Search.py) | 탐색(Binary) | **반드시 정렬된 데이터**에서만 사용 가능 |
+### 2.2. Codes (소스 코드)
+알고리즘의 실제 파이썬 구현 사례입니다.
 
----
+- [01_Sort_정렬.py](./Codes_소스코드/01_Sort_정렬.py)
+- [02_Search_탐색.py](./Codes_소스코드/02_Search_탐색.py)
+- [03_Greedy_탐욕알고리즘.py](./Codes_소스코드/03_Greedy_탐욕알고리즘.py)
+- [04_MergeSort_합병정렬.py](./Codes_소스코드/04_MergeSort_합병정렬.py)
+- [05_Backtracking_백트래킹.py](./Codes_소스코드/05_Backtracking_백트래킹.py)
+- [06_BranchAndBound_분기한정.py](./Codes_소스코드/06_BranchAndBound_분기한정.py)
+- [07_Approximation_근사알고리즘.py](./Codes_소스코드/07_Approximation_근사알고리즘.py)
+- [08_Parallel_병렬알고리즘.py](./Codes_소스코드/08_Parallel_병렬알고리즘.py)
+- [09_Distributed_분산알고리즘.py](./Codes_소스코드/09_Distributed_분산알고리즘.py)
+- [10_Quantum_양자알고리즘.py](./Codes_소스코드/10_Quantum_양자알고리즘.py)
 
-## 📖 추가 이론 (시험 단골 문제)
-
-### 알고리즘의 표현 방식 비교
-시험 1장에서 자주 나오는 표현 방식들의 특징을 정리했습니다.
-
-*   **자연어(Natural Language)**: 일상 언어로 기술. 쉽지만 모호할 수 있음.
-*   **순서도(Flowchart)**: 약속된 기호로 시각화. 흐름 파악은 좋으나 복잡한 로직 표현이 힘듦.
-*   **의사코드(Pseudocode)**: 특정 언어에 종속되지 않는 프로그래밍 스타일. 가장 널리 쓰임.
-*   **N-S 차트(Nassi-Shneiderman)**: 
-    *   **특징**: 화살표를 사용하지 않고 박스 구조를 중첩시켜 표현.
-    *   **장점**: 논리적 구조(선택, 반복)가 명확히 보임.
-
----
-
-## 💡 학습 방법
-1. 각 `.py` 파일을 열어 상단의 **[시험 꿀팁!]**을 완벽히 이해합니다.
-2. `prompt.md`의 지적 사항이 반영된 최신 코드를 분석합니다.
-3. 직접 실행하며 알고리즘이 단계별로 어떻게 유망성을 판단하고 분할하는지 확인합니다.
-
-열공해서 중간고사 대박 나세요! 🔥
+## 3. 학습 가이드
+1. `Concepts_개념정리` 폴더 내의 문서를 통해 알고리즘의 성립 조건과 시험 포인트를 먼저 이해합니다.
+2. `Codes_소스코드` 폴더 내의 파이썬 파일을 실행하며 실제 데이터 처리 과정을 확인합니다.
+3. 특히 정렬의 피벗 전략, 그리디의 최적 부분 구조 등 핵심 키워드를 중점적으로 복습하십시오.
