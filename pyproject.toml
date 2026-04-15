@@ -1,6 +1,6 @@
 [project]
 name = "algorithm-midterm-test"
 version = "0.1.0"
-authors = [{name = "Junseung Kim", email = "your@email.com"}]
+authors = [{name = "Junseung Kim", email = "rla005@naver.com"}]
 description = "연암공대 알고리즘 중간고사 대비 코드 모음"
 dependencies = ["numpy"]
